@@ -1,0 +1,27 @@
+{
+  "name": "midterm-portfolio-sathwikm27",
+  "version": "1.0.0",
+  "description": "Midterm portfolio using, node, playwright and git",
+  "main": "npx playwright test",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NJIT-WIS/midterm-portfolio-SathwikM27.git"
+  },
+  "keywords": [
+    "Portfolio",
+    "project"
+  ],
+  "author": "Sathwik Varma Mudduluri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NJIT-WIS/midterm-portfolio-SathwikM27/issues"
+  },
+  "homepage": "https://github.com/NJIT-WIS/midterm-portfolio-SathwikM27#readme"
+}
