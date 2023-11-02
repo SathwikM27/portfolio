@@ -66,3 +66,8 @@ test('check that the page has a valid navigation menu', async ({ page }) => {
     expect(navMenu).toBeTruthy();
 });
 
+test('check that the page has a valid resume button', async ({ page }) => {
+    await page.goto('http://127.0.0.1:5500/docs/index.htm');
+    const resumeButton = await page.$('button#resume');
+    expect(resumeButton).toBeTruthy();
+});
