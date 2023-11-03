@@ -15,7 +15,7 @@ body {
     align-items: center;
     height: 100vh;
     justify-content: space-between;
-    max-width: 800px;
+    max-width: 1440px;
     margin: auto;
 }
 
@@ -60,13 +60,69 @@ h2 {
 .btn:hover {
     background-color: #FFD700;
     color: #141414; 
-    
-    
 }
+
 .info {
     max-width: 60%;
     text-align: left;
 }
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.home-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: BUTTON_COLOR_PLACEHOLDER;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.about-section {
+    flex: 1;
+    padding: 50px;
+}
+
+.about-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.download-resume {
+    background-color: BUTTON_COLOR_PLACEHOLDER;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.resume-section {
+    flex: 1;
+    padding: 50px;
+}
+
+.resume-label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.email-input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
 
 @media screen and (max-width: 600px) {
     .info {
