@@ -122,6 +122,47 @@ h2 {
     border-radius: 5px;
     margin-bottom: 20px;
 }
+.projects-container {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 50px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.project-icon a {
+    text-decoration: none; /* Removes underline */
+}
+
+.project-icon .fab {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.project-icon a:hover .fab {
+    /* You can add a different color or any other style for the hover effect if needed */
+    color: #FFD700; 
+}
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    max-width: 70%;
+}
 
 
 @media screen and (max-width: 600px) {
