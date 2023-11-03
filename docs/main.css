@@ -1,5 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
     color: #FFF;
     background-color: #141414; 
     background-image: "mountain.png"; 
@@ -25,6 +26,7 @@ nav {
 }
 
 header {
+    font-family: 'Cinzel decorative', serif;
     text-align: center;
 }
 
