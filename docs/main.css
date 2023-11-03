@@ -55,7 +55,7 @@ h2 {
     text-decoration: none;
     color: #ffffff; 
     text-align: center;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
 }
 .btn:hover {
     background-color: #FFD700;
@@ -148,6 +148,7 @@ h2 {
 .project-icon .fab {
     font-size: 50px;
     margin-bottom: 15px;
+    transition: color 0.3s ease;
 }
 
 .project-icon a:hover .fab {
@@ -163,7 +164,24 @@ p {
     text-align: center;
     max-width: 70%;
 }
+.icon-link {
+    text-decoration: none; /* Removes underline */
+    margin: 10px; /* Space between icons */
+    font-size: 50px; /* Icon size */
+    color: #FFFFFF; /* Icon color */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
 
+.icon-link:hover {
+    color: #FFD700; /* Change this to your desired hover color */
+}
+
+.socials {
+    display: flex;
+    justify-content: center; /* Horizontally center icons */
+    align-items: center; /* Vertically center icons */
+    flex-wrap: wrap; /* Allows icons to wrap to next line if screen is too small */
+}
 
 @media screen and (max-width: 600px) {
     .info {
