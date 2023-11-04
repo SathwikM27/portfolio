@@ -1,31 +1,39 @@
 body {
+    padding-top: 20px;
     font-family: 'Inconsolata', monospace;
-    font-size: 20px;
+    font-size: 1.618rem;
     color: #FFF;
     background-color: #141414; 
     background-image: "mountain.png"; 
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 20px;
+    padding: 2.618rem;
 }
 
-.container {
+.homepage {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
     align-items: center;
     height: 100vh;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 1440px;
     margin: auto;
 }
-
+.about-section {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1440px;
+    margin: 50px auto;
+}
 nav {
     width: 100%;
     display: flex;
     justify-content: flex-end;
 }
 
-header {
+.header {
     font-family: 'Cinzel decorative', serif;
     text-align: center;
 }
@@ -123,6 +131,7 @@ h2 {
     margin-bottom: 20px;
 }
 .projects-container {
+    display: flex;
     max-width: 800px;
     margin: 50px auto;
     display: flex;
