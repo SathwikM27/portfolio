@@ -13,91 +13,130 @@
 </head>
 
 <body>
-    <div class="homepage">
-        <div class="header">
-            <h1>Sathwik Varma Mudduluri</h1>
-            <h2>Front-End Web Developer</h2>
+    <div class="container">
+        <div class="homepage">
+            <div class="header">
+                <h1>Sathwik Varma Mudduluri</h1>
+                <h2>Full-Stack Developer</h2>
+            </div>
+            <div class="info">
+                <p>Born in Hyderabad, India. Based in NYC.</p>
+                <p>I believe in web design that changes the status quo. With a calling to rethink web design, I look forward to breaking the norms with new opportunities.</p>
+            </div>
+            <div class="menu">
+                <a href="#about" class="btn">About</a>
+                <a href="#ResumeBtn" class="btn">Resume</a>
+                <a href="#proj-page" class="btn">Projects</a>
+                <a href="#" class="btn">Contact</a>
+            </div>
         </div>
-        <div class="info">
-            <p>Born in Hyderabad, India. Based in NYC.</p>
-            <p>I believe in web design that changes the status quo. With a calling to rethink web design, I look forward to breaking the norms with new opportunities.</p>
-        </div>
-        <div class="menu">
-            <button href="#" class="btn">About</button>
-            <button href="#" class="btn">Resume</button>
-            <button href="#" class="btn">Projects</button>
-            <button href="#" class="btn">Contact</button>
-        </div>
-    </div>
-    <div class="about-section">
-        <!-- Home Button -->
-        <button class="home-button" onclick="scrollToTop()">🏠</button>
-
-        <!-- About Section -->
-        <div class="content">
+        <div class="about-section">
+            <div>
+                <h6 class="about-title" id="about">About</h6>
+            </div>
             <div class="about-description">
-                <div class="about-title">About</div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-                </p>
-                <button class="btn">Download Resume</button>
+                <div class="about-title">
+                    <h6>Skills:</h6>
+                </div>
+                <div class="skills-container">
+                    <div class="skill">
+                        <i class="fab fa-java"></i>
+                        <p>Java</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-python"></i>
+                        <p>Python</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-html5"></i>
+                        <p>HTML</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-css3-alt"></i>
+                        <p>CSS</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fas fa-database"></i>
+                        <p>SQL</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-js-square"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-cuttlefish"></i>
+                        <p>C</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-git-alt"></i>
+                        <p>Git</p>
+                    </div>
+                    </div> 
+                <div class="about-content">
+                    <p>
+                        Pursuing the path of software development in Big Data infrastructure dealins with the processing and flow of data
+                    </p>
+                </div>
+                <div class="ResumeBtn">
+                    <a class="btn">Download Resume</a>
+                </div>
             </div>
             <div class="resume-section">
                 <div class="resume-label">Resume mailing list:</div>
                 <input type="email" class="email-input" placeholder="Enter your Email address">
-                <button class="btn">Submit</button>
+                <a class="btn">Submit</a>
             </div>
         </div>
-    </div>
-    <div class="projects-container">
-        <h2>Projects</h2>
-    
-        <div class="project">
-            <div class="project-icon">
-                <a href="https://github.com/YourUsername/YourRepositoryName" target="_blank" rel="noopener noreferrer">
+        <div class="projects-container">
+            <h2 id="proj-page">Projects</h2>
+        
+            <div class="project">
+                <div class="project-icon">
+                    <a href="https://github.com/YourUsername/YourRepositoryName" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <h3>Project 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. U</p>
+            </div>
+        
+            <div class="project">
+                <div class="project-icon">
+                    <a href="https://github.com/YourUsername/YourRepositoryName" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <h3>Project 2(*WIP)</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. U</p>
+            </div>
+            <div class="container">
+                <!-- Outlook Email Icon -->
+                <a href="mailto:youremail@example.com" target="_blank" rel="noopener noreferrer" class="icon-link">
+                    <i class="far fa-envelope"></i>
+                </a>
+            
+                <!-- Phone Number Icon (placeholder number) -->
+                <a href="tel:+1234567890" target="_blank" rel="noopener noreferrer" class="icon-link">
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+            
+                <!-- GitHub Icon -->
+                <a href="https://github.com/YourUsername" target="_blank" rel="noopener noreferrer" class="icon-link">
                     <i class="fab fa-github"></i>
                 </a>
-            </div>
-            <h3>Project 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. U</p>
-        </div>
-    
-        <div class="project">
-            <div class="project-icon">
-                <a href="https://github.com/YourUsername/YourRepositoryName" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i>
+            
+                <!-- Twitter Icon -->
+                <a href="https://twitter.com/YourUsername" target="_blank" rel="noopener noreferrer" class="icon-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            
+                <!-- LinkedIn Icon -->
+                <a href="https://linkedin.com/in/YourUsername" target="_blank" rel="noopener noreferrer" class="icon-link">
+                    <i class="fab fa-linkedin"></i>
                 </a>
             </div>
-            <h3>Project 2(*WIP)</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. U</p>
         </div>
-        <div class="container">
-            <!-- Outlook Email Icon -->
-            <a href="mailto:youremail@example.com" target="_blank" rel="noopener noreferrer" class="icon-link">
-                <i class="far fa-envelope"></i>
-            </a>
-        
-            <!-- Phone Number Icon (placeholder number) -->
-            <a href="tel:+1234567890" target="_blank" rel="noopener noreferrer" class="icon-link">
-                <i class="fas fa-phone-alt"></i>
-            </a>
-        
-            <!-- GitHub Icon -->
-            <a href="https://github.com/YourUsername" target="_blank" rel="noopener noreferrer" class="icon-link">
-                <i class="fab fa-github"></i>
-            </a>
-        
-            <!-- Twitter Icon -->
-            <a href="https://twitter.com/YourUsername" target="_blank" rel="noopener noreferrer" class="icon-link">
-                <i class="fab fa-twitter"></i>
-            </a>
-        
-            <!-- LinkedIn Icon -->
-            <a href="https://linkedin.com/in/YourUsername" target="_blank" rel="noopener noreferrer" class="icon-link">
-                <i class="fab fa-linkedin"></i>
-            </a>
-        </div>
-    </div>
+    </div>    
 </body>
 
 </html>
