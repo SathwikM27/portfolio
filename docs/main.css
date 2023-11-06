@@ -1,4 +1,19 @@
-body {
+/*body {
+    padding-top: 20px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.618rem;
+    color: #FFF;
+    background-color: #141414; 
+    background-image: "mountain.png"; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2.618rem;
+}*/
+.container {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
     padding-top: 20px;
     font-family: 'Inconsolata', monospace;
     font-size: 1.618rem;
@@ -9,23 +24,33 @@ body {
     background-repeat: no-repeat;
     padding: 2.618rem;
 }
-
+html {
+    scroll-behavior: smooth;
+   }
 .homepage {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    height: 100vh;
+    flex-shrink: 0;
+    min-height: 100vh;
+    max-height: auto;
     justify-content: space-around;
     max-width: 1440px;
     margin: auto;
+    scroll-snap-stop: always;
+
 }
 .about-section {
     display: flex;
     flex-flow: row wrap;
+    flex-shrink: 0;
     align-items: center;
+    min-height: 100vh;
+    max-height: auto;
     justify-content: space-around;
     max-width: 1440px;
-    margin: 50px auto;
+    margin: 50px 81px;
+    scroll-snap-stop: always;
 }
 nav {
     width: 100%;
@@ -39,11 +64,11 @@ nav {
 }
 
 h1 {
-    font-size: 2.618em;
+    font-size: 2.618rem;
 }
 
 h2 {
-    font-size: 1.618em;
+    font-size: 1.618rem;
     margin-top: 10px;
 }
 
@@ -74,13 +99,6 @@ h2 {
     max-width: 60%;
     text-align: left;
 }
-.content {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
-}
-
 .home-button {
     position: fixed;
     top: 10px;
@@ -90,30 +108,71 @@ h2 {
     border: none;
     cursor: pointer;
 }
-
-.about-section {
-    flex: 1;
-    padding: 50px;
+.about-description {
+    display:flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-direction: column;
+    font-size: 1.618rem;
+    font-family: 'Inconsolata', monospace;
+    margin-bottom: 20px;
 }
+.skills-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 20px; /* Space between skill icons */
+  }
+  
+  .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .skill i {
+    font-size: 40px; /* Icon size */
+    margin-bottom: 10px; /* Space between icon and text */
+    color: #FFFFFF; /* Icon color, change as needed */
+  }
+  
+  .skill p {
+    font-size: 14px;
+    color: #FFFFFF; /* Text color, change as needed */
+  }
+  
 
 .about-title {
-    font-size: 24px;
-    margin-bottom: 20px;
+    align-self: center;
+
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-.about-description {
-    font-size: 16px;
-    margin-bottom: 20px;
+
+.about-content {
+    
+    display: flex;
+    align-self: center;
+    text-align: center;
+    align-items: center;
+}
+.about-content p {
+    margin-bottom: 10px;
+    align-self: center;
+    max-width: max-content;
 }
 
-.download-resume {
-    background-color: BUTTON_COLOR_PLACEHOLDER;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
+.ResumeBtn {
+    align-self: center;
 }
 
 .resume-section {
+    
     flex: 1;
     padding: 50px;
 }
