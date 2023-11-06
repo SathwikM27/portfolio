@@ -146,7 +146,7 @@ h2 {
   }
   
 
-.about-title {
+.title {
     align-self: center;
 
     font-size: 48px;
@@ -204,6 +204,9 @@ h2 {
 h2 {
     margin-bottom: 50px;
 }
+#proj-page {
+    font-size: 40px;
+}
 
 .project {
     display: flex;
@@ -251,11 +254,28 @@ p {
     color: #FFD700; /* Change this to your desired hover color */
 }
 
-.socials {
+.contact-page {
     display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    min-height: 100vh;
+    max-height: auto;
     justify-content: center; /* Horizontally center icons */
     align-items: center; /* Vertically center icons */
-    flex-wrap: wrap; /* Allows icons to wrap to next line if screen is too small */
+   /* flex-wrap: wrap;  Allows icons to wrap to next line if screen is too small */
+}
+.contacts-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.social-container {
+    margin-top: 10px;
+    max-width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @media screen and (max-width: 600px) {
