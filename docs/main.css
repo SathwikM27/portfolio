@@ -40,18 +40,7 @@ html {
     scroll-snap-stop: always;
 
 }
-.about-section {
-    display: flex;
-    flex-flow: row wrap;
-    flex-shrink: 0;
-    align-items: center;
-    min-height: 100vh;
-    max-height: auto;
-    justify-content: space-around;
-    max-width: 1440px;
-    margin: 50px 81px;
-    scroll-snap-stop: always;
-}
+
 nav {
     width: 100%;
     display: flex;
@@ -107,6 +96,18 @@ h2 {
     padding: 10px 15px;
     border: none;
     cursor: pointer;
+}
+.about-section {
+    display: flex;
+    flex-flow: row wrap;
+    flex-shrink: 0;
+    align-items: center;
+    min-height: 100vh;
+    max-height: auto;
+    justify-content: space-around;
+    max-width: 1440px;
+    margin: 50px 81px;
+    scroll-snap-stop: always;
 }
 .about-description {
     display:flex;
@@ -191,8 +192,10 @@ h2 {
 }
 .projects-container {
     display: flex;
-    max-width: 800px;
-    margin: 50px auto;
+    max-width: 1440px;
+    margin: auto;
+    min-height: 100vh;
+    max-height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -204,6 +207,10 @@ h2 {
 
 .project {
     display: flex;
+    background-color: #000;
+    border: 2px solid #FFD700;
+    border-radius: 15px;
+    padding: 20px;
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
