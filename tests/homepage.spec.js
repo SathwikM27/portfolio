@@ -97,3 +97,9 @@ test('check for Contact page', async ({ page }) => {
     const contactHeading = await page.$('h2#cont-page');
     expect(contactHeading).toBeTruthy();
 });
+test('check for GitHub link', async ({ page }) => {
+    await page.goto('http://127.0.0.1:3000');
+    const githubLink = await page.$('a#github-link');
+    expect(githubLink).toBeTruthy();
+});
+
