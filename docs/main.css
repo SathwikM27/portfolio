@@ -1,14 +1,7 @@
-/*body {
-    padding-top: 20px;
-    font-family: 'Inconsolata', monospace;
-    font-size: 1.618rem;
-    color: #FFF;
-    background-color: #141414; 
-    background-image: "mountain.png"; 
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 2.618rem;
-}*/
+body {
+    margin: 16px;
+    background-image: url("./images/metal.avif");
+}
 .container {
     max-width: 1440px;
     margin: auto;
@@ -19,7 +12,7 @@
     font-size: 1.618rem;
     color: #FFFFF0;
     background-color: #141414; 
-    background-image: "mountain.png"; 
+    opacity: 0.97;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 2.618rem;
