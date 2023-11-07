@@ -74,3 +74,9 @@ test('check that the page has a subheading', async ({ page }) => {
     const heading = await page.$('h2');
     expect(await heading.innerText()).toBe('Full-Stack Developer');
 });
+
+test('check that homepage has basic info', async ({ page }) => {
+    await page.goto('http://127.0.0.1:3000');
+    const infoDiv = await page.$('div.info');
+    expect(infoDiv).toBeTruthy();
+});
