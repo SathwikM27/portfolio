@@ -92,4 +92,8 @@ test('check for Projects page', async ({ page }) => {
     const projHeading = await page.$('h2#proj-page');
     expect(projHeading).toBeTruthy();
 });
-
+test('check for Contact page', async ({ page }) => {
+    await page.goto('http://127.0.0.1:3000');
+    const contactHeading = await page.$('h2#cont-page');
+    expect(contactHeading).toBeTruthy();
+});
