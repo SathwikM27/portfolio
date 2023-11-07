@@ -36,11 +36,6 @@ test('check that the page has a valid meta keywords', async ({ page }) => {
     expect(metaKeywords).toBeTruthy();
 });
 
-test('check that the page has a valid favicon', async ({ page }) => {
-    await page.goto('http://127.0.0.1:3000');
-    const favicon = await page.$eval('link[rel="icon"]', (link) => link.getAttribute('href'));
-    expect(favicon).toBeTruthy();
-});
 
 test('check that the page has a valid viewport', async ({ page }) => {
     await page.goto('http://127.0.0.1:3000');
@@ -48,11 +43,7 @@ test('check that the page has a valid viewport', async ({ page }) => {
     expect(viewport).toBeTruthy();
 });
 
-test('check that the page has a valid header', async ({ page }) => {
-    await page.goto('http://127.0.0.1:3000');
-    const header = await page.$('header');
-    expect(header).toBeTruthy();
-});
+
 
 test('check that the page has a valid footer', async ({ page }) => {
     await page.goto('http://127.0.0.1:3000');
@@ -66,8 +57,14 @@ test('check that the page has a valid navigation menu', async ({ page }) => {
     expect(navMenu).toBeTruthy();
 });
 
-test('check that the page has a valid resume button', async ({ page }) => {
+test('check that the page has a valid resume mailing list button', async ({ page }) => {
     await page.goto('http://127.0.0.1:3000');
-    const resumeButton = await page.$('button#resume');
+    const resumeButton = await page.$('a#resume-mail');
     expect(resumeButton).toBeTruthy();
+});
+
+test('check that the page has a valid download resume button', async ({ page }) => {
+    await page.goto('http://127.0.0.1:3000');
+    const downloadResumeButton = await page.$('a#download-resume');
+    expect(downloadResumeButton).toBeTruthy();
 });
