@@ -9,12 +9,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&family=Inconsolata&family=Inknut+Antiqua&display=swap" rel="stylesheet">
+    <script>
+        window.addEventListener('scroll', function() {
+            var navbar = document.getElementById('navbar');
+            // Set the point of scroll (in pixels) after which the navbar will appear
+            var scrollAppearPoint = 500;
+        
+            if (window.scrollY > scrollAppearPoint) {
+            navbar.style.display = 'flex';
+            } else {
+            navbar.style.display = 'none';
+            }
+        });
+  </script>
     <title>Sathwik Varma Mudduluri | Front-End Web Developer</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="homepage">
+        <div class="homepage" id="home">
             <div class="header">
                 <h1>Sathwik Varma Mudduluri</h1>
                 <h2>Full-Stack Developer</h2>
@@ -30,6 +43,15 @@
                 <a href="#" class="btn">Contact</a>
             </div>
         </div>
+        <nav id="navbar" class="nav-hidden">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#ResumeBtn">Resume</a></li>
+              <li><a href="#proj-page">Projects</a></li>
+              <li><a href="#contacts">Contact</a></li>
+            </ul>
+          </nav>
         <div class="about-section">
             <div>
                 <h6 class="title" id="about">About</h6>
@@ -94,11 +116,13 @@
                 
                 <h3>Porftfolio Website Design</h3>
                 <p>
-                    <li>Designed and implemented a Portfolio Website</li>
-                    <li>Used HTML, CSS, and JavaScript to create a responsive website</li>
-                    <li>Developed automated tests using Playwright</li>
-                    <li>Implemented by following a issue-resolution process in-line with professional workflows</li>
-                    <li>Used GitHub to host the website</li>
+                    <ul>
+                        <li>Designed and implemented a Portfolio Website</li>
+                        <li>Used HTML, CSS, and JavaScript to create a responsive website</li>
+                        <li>Developed automated tests using Playwright</li>
+                        <li>Implemented by following a issue-resolution process in-line with professional workflows</li>
+                        <li>Used GitHub to host the website</li>
+                    </ul>
                 </p>
                 <div class="project-icon">
                     <a href="https://github.com/YourUsername/YourRepositoryName" target="_blank" rel="noopener noreferrer">
@@ -121,7 +145,7 @@
                 </div>
             </div>
         </div>
-        <div class="contact-page">
+        <div class="contact-page" id="contacts">
             <p>Feel free to connect with me through the following channels!</p>
             <h2 class="title" id="cont-page">Contact</h2>
             <div class="contacts-container">
