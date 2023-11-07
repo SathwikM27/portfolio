@@ -30,6 +30,7 @@ html {
     background: #141414;
     color: white;
     z-index: 1000;
+    display: none; /* Hide navbar by default */
 }
   
 #navbar ul {
