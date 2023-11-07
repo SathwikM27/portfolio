@@ -107,3 +107,8 @@ test('check for LinkedIn link', async ({ page }) => {
     const githubLink = await page.$('a#linkedin-link');
     expect(githubLink).toBeTruthy();
 });
+test('check for Twitter link', async ({ page }) => {
+    await page.goto('http://127.0.0.1:3000');
+    const githubLink = await page.$('a#twitter-link');
+    expect(githubLink).toBeTruthy();
+});
