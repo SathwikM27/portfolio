@@ -68,3 +68,9 @@ test('check that the page has a valid download resume button', async ({ page }) 
     const downloadResumeButton = await page.$('a#download-resume');
     expect(downloadResumeButton).toBeTruthy();
 });
+
+test('check that the page has a subheading', async ({ page }) => {
+    await page.goto('http://127.0.0.1:3000');
+    const heading = await page.$('h2');
+    expect(await heading.innerText()).toBe('Full-Stack Developer');
+});
