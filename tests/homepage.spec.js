@@ -80,8 +80,16 @@ test('check that homepage has basic info', async ({ page }) => {
     const infoDiv = await page.$('div.info');
     expect(infoDiv).toBeTruthy();
 });
+
 test('check for About page', async ({ page }) => {
     await page.goto('http://127.0.0.1:3000');
     const aboutHeading = await page.$('h6#about');
     expect(aboutHeading).toBeTruthy();
 });
+
+test('check for Projects page', async ({ page }) => {
+    await page.goto('http://127.0.0.1:3000');
+    const projHeading = await page.$('h2#proj-page');
+    expect(projHeading).toBeTruthy();
+});
+
