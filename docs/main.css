@@ -43,7 +43,9 @@ html {
 #navbar ul li {
     padding: 20px;
 }
-  
+.accent{
+    color: #FF2800;
+}
 #navbar ul li a {
     color: #FFD700;
     text-decoration: none;
