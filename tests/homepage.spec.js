@@ -112,3 +112,8 @@ test('check for Twitter link', async ({ page }) => {
     const githubLink = await page.$('a#twitter-link');
     expect(githubLink).toBeTruthy();
 });
+test('check for Email link', async ({ page }) => {
+    await page.goto('http://127.0.0.1:3000');
+    const mailtoLink = await page.$('a[href^="mailto:"]');
+    expect(mailtoLink).toBeTruthy();
+});
