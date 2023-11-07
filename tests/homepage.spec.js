@@ -102,4 +102,8 @@ test('check for GitHub link', async ({ page }) => {
     const githubLink = await page.$('a#github-link');
     expect(githubLink).toBeTruthy();
 });
-
+test('check for LinkedIn link', async ({ page }) => {
+    await page.goto('http://127.0.0.1:3000');
+    const githubLink = await page.$('a#linkedin-link');
+    expect(githubLink).toBeTruthy();
+});
