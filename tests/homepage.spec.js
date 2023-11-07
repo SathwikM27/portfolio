@@ -12,9 +12,9 @@ test('check that page title is correct', async ({ page }) => {
     expect(title).toBe('My Portfolio');
 });
 
-test('check that the page has a valid doctype', async ({ page }) => {
+test('check that the doctype is HTML', async ({ page }) => {
     await page.goto('http://127.0.0.1:3000');
-    const doctype = await page.$eval('html', (html) => html.doctype.name);
+    const doctype = await page.evaluate(() => document.doctype.name);
     expect(doctype).toBe('html');
 });
 
