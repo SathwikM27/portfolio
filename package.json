@@ -1,35 +1,36 @@
 {
-  "name": "midterm-portfolio-sathwikm27",
-  "version": "1.0.0",
-  "description": "Midterm portfolio using, node, playwright and git",
-  "main": "npx playwright test",
-  "directories": {
-    "doc": "docs",
-    "test": "tests"
-  },
+  "name": "sathwik-portfolio",
+  "version": "2.0.0",
+  "description": "Sathwik Varma Mudduluri's portfolio, built with Next.js, TypeScript, and Tamagui",
+  "private": true,
   "scripts": {
-    "test": "npx playwright test",
-    "start": "node index.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "test": "playwright test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/NJIT-WIS/midterm-portfolio-SathwikM27.git"
-  },
-  "keywords": [
-    "Portfolio",
-    "project"
-  ],
   "author": "Sathwik Varma Mudduluri",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/NJIT-WIS/midterm-portfolio-SathwikM27/issues"
-  },
-  "homepage": "https://github.com/NJIT-WIS/midterm-portfolio-SathwikM27#readme",
-  "devDependencies": {
-    "@playwright/test": "^1.39.0",
-    "@types/node": "^20.8.10"
-  },
   "dependencies": {
-    "express": "^4.18.2"
+    "@tamagui/config": "2.7.7",
+    "@tamagui/lucide-icons-2": "^2.7.7",
+    "@tamagui/next-theme": "2.7.7",
+    "next": "16.3.4",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "react-native-svg": "^15.15.5",
+    "react-native-svg-web": "^1.0.9",
+    "react-native-web": "^0.21.2",
+    "tamagui": "2.7.7"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "16.3.4",
+    "typescript": "^5.9.3"
   }
 }
