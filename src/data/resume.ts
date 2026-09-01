@@ -120,6 +120,16 @@ export const projects: Project[] = [
     tags: ["Google Cloud", "Networking", "TCP/BBR", "Bash"],
   },
   {
+    title: "Studio Tropicalwest",
+    description: [
+      "Built and maintain the marketing site for a Bengaluru-based interior design studio, on Next.js, Tailwind CSS, and Sanity CMS",
+      "Implemented light/dark theming, SEO (Open Graph, sitemap, JSON-LD local-business structured data), and GA4 conversion tracking",
+      "Added WhatsApp, call, and email lead-capture flows tailored to the studio's local Bengaluru client base",
+    ],
+    href: "https://studio-tropicalwest-psi.vercel.app",
+    tags: ["Next.js", "Tailwind CSS", "Sanity CMS", "Vercel"],
+  },
+  {
     title: "This Portfolio",
     description: [
       "Rebuilt this site from static HTML/CSS into a Next.js + TypeScript app with Tamagui",
