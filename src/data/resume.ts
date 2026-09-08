@@ -166,6 +166,25 @@ export const publications: Publication[] = [
   },
 ];
 
+export type Certification = {
+  name: string;
+  issuer: string;
+  href: string;
+};
+
+export const certifications: Certification[] = [
+  {
+    name: "Certified System Administrator (CSA)",
+    issuer: "ServiceNow",
+    href: "https://www.credly.com/badges/7ecded3b-798b-40a3-b5ed-de4a8292c797/public_url",
+  },
+  {
+    name: "Certified Application Developer (CAD)",
+    issuer: "ServiceNow",
+    href: "https://www.credly.com/badges/63350241-3e7c-4efc-8e75-ffd9e750a2ae/public_url",
+  },
+];
+
 export const education = [
   {
     school: "New Jersey Institute of Technology",
