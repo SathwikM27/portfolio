@@ -23,6 +23,10 @@ export const skillGroups: { label: string; skills: string[] }[] = [
   { label: "Testing & QA", skills: ["Playwright", "JUnit", "EvoSuite"] },
   { label: "ML & Compute", skills: ["TensorFlow", "PyTorch", "CUDA", "cuDNN"] },
   { label: "AI Tooling", skills: ["LLMs", "Prompt Engineering", "AI-Assisted Coding", "Claude Code"] },
+  {
+    label: "ServiceNow",
+    skills: ["CSA", "CAD", "Glide API", "Flow Designer", "Scripted REST APIs", "ITSM"],
+  },
 ];
 
 export type Experience = {
